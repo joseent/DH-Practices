@@ -1,0 +1,137 @@
+main {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+main form {
+    background-color: #00669F;
+    border-radius: 30px;
+    color: #FFFFFF;
+    margin: 30px 0;
+    padding: 18px 115px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form h2 {
+    color: #FBFFFD;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+main form p {
+    margin: 15px 0px;
+    font-size: 20px;
+}
+
+main form div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+main form div section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 50%;
+}
+
+main form div section span {
+    font-weight: lighter
+}
+
+main form div section label {
+    font-size: 16px;
+}
+
+main form div section input {
+    border: none;
+    border-radius: 10px;
+    margin: 12px 0;
+    padding: 20px;
+}
+
+main form div section select {
+    border: none;
+    border-radius: 10px;
+    margin: 12px 0;
+    padding: 20px;
+    width: 100%;
+}
+
+main form div section input[type="file"] {
+    width: 100%;
+    margin: 12px 0;
+    padding: 15px 0;
+    border: none;
+    color: black;
+}
+
+main form div section input[type="file"]::-webkit-file-upload-button {
+    border: none;
+    background-color: #CECECE;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 12px;
+    text-align: start;
+    width: 60%;
+}
+
+main form div section textarea {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main form div section hr {
+    margin: 10px 0;
+}
+
+main form button {
+    background-color: #1CD1B0;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    font-size: 2rem;
+    padding: 20px;
+    width: 50%;
+    margin-top: auto;
+}
+
+@media (max-width:768px) {
+    main form {
+        width: 90%;
+        padding: 20px 18px;
+        height: 100%;
+    }
+}
+
+@media (max-width:320px) {
+    main {
+        display: flex;
+        justify-content: center;
+        height: 350vh;
+    }
+    main form div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    main form div section {
+        width: 100%;
+    }
+    main form div section div {
+        display: flex;
+        flex-direction: row;
+        margin: 5px 0 0 20px;
+    }
+    main form button {
+        width: 90%;
+    }
+}

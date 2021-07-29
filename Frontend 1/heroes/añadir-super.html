@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/anadir-super.css">
+
+</head>
+
+<body>
+    <div class="BarDiscount">
+        <p>Descuentos 20%</p>
+    </div>
+    <header>
+        <h1>Card Super Heroes</h1>
+        <div>
+            <ul type="none">
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./registro.html">Registrarme</a></li>
+                <li><a href="./login.html">Ingresar</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+        <form action="POST">
+
+            <h2>Añadi tu super!</h2>
+            <P>Agregá tu personaje favorito completando las opciones.</P>
+            <div>
+
+                <section>
+                    <span>Nombre</span>
+                    <input type="text" name="nombre" id="nombre" required>
+                    <span>Fecha</span>
+                    <input type="date" name="fecha" id="fecha">
+
+                    <textarea name="descripcion" cols="30" rows="15" placeholder="Descripción"></textarea>
+
+                </section>
+
+                <section>
+                    <span>Especie</span>
+                    <select name="especie" id="especie" required>
+                        <option value="unknow" selected="true" disabled="disabled">Especie</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+
+                    <span>Agregar Foto</span>
+                    <input type="file" name="image">
+
+                    <span>Poderes</span>
+
+                    <div>
+                        <input type="checkbox" id="volar" name="volar">
+                        <label for="volar">Volar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="superinteligencia" name="superinteligencia">
+                        <label for="superinteligencia">Superinteligencia</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="laser" name="laser">
+                        <label for="laser">Vista de rayo laser</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="billetera" name="billetera">
+                        <label for="billetera">Billetera gorda</label>
+                    </div>
+
+                    <hr>
+
+                    <span>Tipo de personaje</span>
+                    <div>
+                        <input type="radio" name="tipo" value="heroe-heroina">
+                        <label for="billetera">Heroe / Heroina</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tipo" value="villano-villana">
+                        <label for="billetera">Villano / Villana</label>
+                    </div>
+                </section>
+            </div>
+            <button type="submit">Añadir</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+        <img src="./img/github.png" alt="github">
+    </footer>
+
+</body>
+
+</html>

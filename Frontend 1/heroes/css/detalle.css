@@ -1,0 +1,60 @@
+main {
+    background-image: url(../img/harleyBG.png);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-detalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #F3F3F3;
+    height: 45vh;
+    min-width: 260px;
+    max-width: 600px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.45);
+    border-radius: 20px 20px 20px 20px;
+    position: relative;
+    margin: 30px 30px;
+}
+
+.perfil {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.perfil {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    top: -90px;
+    left: 230px;
+}
+
+.card-detalle h2 {
+    text-align: center;
+    margin: 70px auto 10px;
+}
+
+div .card-icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+div .icons {
+    width: 50px;
+}
+
+.boton {
+    width: 100%;
+    padding: 30px;
+    margin: 0px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: #2C0187;
+}
